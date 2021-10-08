@@ -23,3 +23,10 @@ resource "aws_s3_bucket" "this"{
         Managedby = "Terraform"
     }
 }
+
+resource "aws_s3_object" "this"{
+    bucket = aws_s3_bucket.this.bucket
+    key = "my-new-object"
+    
+
+}
