@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "this"{
     bucket = "my-terraform-s3-bucket-20211014"
-    acl = "private"
+    acl = "public-read"
 
     tags = {
         Name = "mybucket"
