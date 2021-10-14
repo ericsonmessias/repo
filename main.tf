@@ -12,7 +12,7 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-
+    
 resource "aws_s3_bucket" "this"{
     bucket = "my-terraform-s3-bcuket-20211008"
     acl = "private"
