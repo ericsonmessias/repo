@@ -1,5 +1,4 @@
 #!/bin/sh
-sudo dnf install nginx -y
-systemctl enable nginx
-systemctl start nginx
-echo "hello world from $(hostname)" > /usr/share/nginx/html/index.html
+sudo apt-get update -y
+sudo apt-get install apache2 -y
+echo "<h1>hello world from $(hostname)</h1>" > /var/www/html/index.html
