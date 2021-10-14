@@ -1,10 +1,10 @@
 resource "aws_s3_bucket" "this"{
-    bucket = "my-terraform-s3-bcuket-20211008"
+    bucket = "my-terraform-s3-bcuket-20211014"
     acl = "private"
 
     tags = {
         Name = "mybucket"
-        Created = "20211008"
+        Created = "20211014"
         Managedby = "Terraform"
     }
 }
