@@ -11,6 +11,8 @@ resource "aws_s3_bucket" "this"{
 
 resource "aws_s3_bucket_object" "this"{
     bucket = aws_s3_bucket.this.bucket
+    acl = "public-read"
     key = "script.sh"
     source ="files/script.sh"
+    content_type = "text/"
 }
